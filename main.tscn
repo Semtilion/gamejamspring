@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cbw0k72qkuab7"]
+
+[ext_resource type="Script" uid="uid://bs6iq1f0veuyb" path="res://game.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://bl7geo0aolvn7" path="res://grid.gd" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://bivvna06edtx8" path="res://combat.gd" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://brg4pqjpg03al" path="res://recruit.gd" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://ck8i4rfgr5rtg" path="res://stage_manager.gd" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://bnpv4vig1mikj" path="res://hud.gd" id="6_7mycd"]
+
+[node name="Main" type="Node2D" unique_id=1425794844]
+script = ExtResource("1_h2yge")
+
+[node name="Grid" type="Node2D" parent="." unique_id=513299353]
+script = ExtResource("2_1bvp3")
+
+[node name="Combat" type="Node2D" parent="." unique_id=443504081]
+script = ExtResource("3_lquwl")
+
+[node name="Recruit" type="Node2D" parent="." unique_id=249127415]
+script = ExtResource("4_1bvp3")
+
+[node name="StageManager" type="Node2D" parent="." unique_id=204548829]
+script = ExtResource("5_lquwl")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=284225617]
+script = ExtResource("6_7mycd")
